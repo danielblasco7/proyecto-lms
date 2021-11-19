@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="icon" href="../imagenes/gmayuscula.png" type="image/png" sizes="16x16">
+</head>
+
+<body>
+    <h1>Inscripción Okeymas Fitness</h1>
+    <p>Has decidido Inscribirte en este gimnasio.</p>
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Toma de datos</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" autofocus required/>
+            </div>
+            <div>
+                       
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" type="apellido" name="apellido" required/>
+            </div>
+            <div>
+                <label for="tel">Telefono: </label>
+                <input id="tel" type="tel" name="tel" placeholder="00000000" required/>
+            </div>
+            <div>
+                <label for="nombre">Email: </label>
+                <input id="mail" type="mail" name="mail" placeholder="@correo.com" required>
+            </div>
+            <br>
+            <fieldset>
+                <legend>Información edad</legend>
+                <p>Identificación</p>
+                <input type="radio" name="edad" value="Mayor" id="1" checked><label for="1">Mayor de edad</label>
+                <input type="radio" name="edad" value="Menor" id="2" ><label for="2">Menor de edad</label>
+                <div>
+                    <label for="fecha">Fecha de naciemiento</label>
+                    <input type="date" name="fecha" min="2021-11-19" required>
+                </div>
+            </fieldset>
+            <div>
+                <p>¿Por qué ha decidido inscribirse en este gimnasio?: </p>
+                <input type="checkbox" id="posibilidad1" name="posibilidad1" value="Cercania">
+                <label for="posibilidad1"> Cercania</label><br>
+
+                <input type="checkbox" id="posibilidad2" name="posibilidad2" value="Precio">
+                <label for="posibilidad2"> Por el precio</label><br>
+
+                <input type="checkbox" id="posibilidad3" name="posibilidad3" value="instalaciones">
+                <label for="posibilidad3"> Las instalaciones</label><br>
+
+                <input type="checkbox" id="posibilidad4" name="posibilidad4" value="Amigos">
+                <label for="componente4"> Esta apuntado un amigx</label><br>
+
+                <input type="checkbox" id="posibilidad5" name="posibilidad5" value="Parking">
+                <label for="posibilidad5"> Por la disponibilidad de Parking</label><br>
+
+                <input type="checkbox" id="posibilidad6" name="posibilidad6" value="zona">
+                <label for="posibilidad6"> Me gusta la zona</label><br>
+            </div>
+            <br>
+            <div>
+                <label for="infoextra">Por otros motivos</label><br>
+                <textarea id="infoextra" name="infoextra"></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </div>
+</body>
+<footer>
+    <hr>
+    <p><em><time> 19 de noviembre de 2021</em></time>
+    </p>
+</footer>
+
+</html>
